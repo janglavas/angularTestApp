@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<table style="background-color:#888000" bordercolor= "#000000">
+  <tr align="center">
+    <td colspan="2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg"/><br></td>
+
+  </tr>
+  <tr bordercolor = "#841F0A">
+<td valign="top">
+  <a [routerLink]="['Home']">Home</a><br>
+  <a [routerLink]="['Supplier/Add']">Supplier</a><br>
+  <a [routerLink]="['Customer/Add']">Customer</a><br>
+</td>
+
+ <td>
+   <div>
+
+<router-outlet></router-outlet>
+
+   </div>
+ </td>
+ </tr>
+
+<tr bordercolor="841F0A"> <td colspan="2"></td></tr>
+<tr align="right">
+  <td colspan="2"> @Copyright Jan 2019 </td>
+  </tr>
+
+
+</table>

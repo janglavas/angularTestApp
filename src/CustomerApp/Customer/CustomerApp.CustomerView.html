@@ -1,0 +1,67 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+<form [formGroup]= "CustomerModel.formCustomerGroup">
+
+<!--Customer Code -->
+Person ID :<br>
+<input formControlName= "CustomerCodeControl"
+[(ngModel)]="CustomerModel.Person_ID" type=text/> <br>
+
+<!--Customer  Name -->
+Namn :<br>
+<input formControlName= "CustomerNameControl"
+[(ngModel)]="CustomerModel.Namn" type=text/> <br>
+
+<!--Customer Amount -->
+Avgift :<br>
+<input [(ngModel)]="CustomerModel.Avgift"
+[ngModelOptions]="{standalone: true}" type=text/> <br>
+
+<input [disabled]="!(CustomerModel.formCustomerGroup.valid)"
+ (click)="Add()" type=button value="Add"/> <br>
+
+</form>
+
+<div *ngIf="CustomerModel.formCustomerGroup.dirty"
+[hidden]="!(hasError('required','CustomerCodeControl'))">
+              Person ID är ogiltig. </div> <br>
+
+<div *ngIf="CustomerModel.formCustomerGroup.dirty"
+[hidden]="!(hasError('required','CustomerCodeControl'))">
+              Person ID saknas. </div> <br>
+
+<div *ngIf="CustomerModel.formCustomerGroup.dirty"
+[hidden]="!(hasError('required','CustomerCodeControl'))">
+              Namn saknas. </div> <br>
+
+<h2>Listan:</h2>
+<test-grid [grid-columns] = "[{'colName': 'Person_ID'},
+ {'colName': 'Namn'}, {'colName': 'Avgift'}]"
+  [grid-data] = "CustomerModels"
+  (grid-selected)="SelectCustomer($event)"
+></test-grid>
+<!-- (shows model values)
+{{CustomerModel.CustomerCode}} <br>
+{{CustomerModel.CustomerName}} <br>
+{{CustomerModel.CustomerAmount}} <br>
+-->
+<!--
+<table>
+  <tr>
+    <td>Person Nummer </td>
+    <td>Namn </td>
+    <td>Avgift </td>
+  </tr>
+  <tr *ngFor="let cust of CustomerModels">
+    <td>{{cust.CustomerCode}}</td>
+    <td>{{cust.CustomerName}}</td>
+    <td>{{cust.CustomerAmount}}</td>
+  </tr>
+</table>
+-->
+
+</div>
