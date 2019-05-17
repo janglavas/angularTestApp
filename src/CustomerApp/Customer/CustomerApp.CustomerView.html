@@ -9,20 +9,22 @@
 <!--Customer Code -->
 Person ID :<br>
 <input formControlName= "CustomerCodeControl"
-[(ngModel)]="CustomerModel.Person_ID" type=text/> <br>
+[(ngModel)]="CustomerModel.CustomerCode" type=text/> <br>
 
 <!--Customer  Name -->
 Namn :<br>
 <input formControlName= "CustomerNameControl"
-[(ngModel)]="CustomerModel.Namn" type=text/> <br>
+[(ngModel)]="CustomerModel.CustomerName" type=text/> <br>
 
 <!--Customer Amount -->
 Avgift :<br>
-<input [(ngModel)]="CustomerModel.Avgift"
+<input [(ngModel)]="CustomerModel.CustomerAmount"
 [ngModelOptions]="{standalone: true}" type=text/> <br>
 
 <input [disabled]="!(CustomerModel.formCustomerGroup.valid)"
- (click)="Add()" type=button value="Add"/> <br>
+ (click)="Add()" type=button value="Add"/>
+ <input [disabled]="Disable" type="button" value="send to server" (click)="PosttoServer()"/> <br>
+
 
 </form>
 
@@ -38,9 +40,10 @@ Avgift :<br>
 [hidden]="!(hasError('required','CustomerCodeControl'))">
               Namn saknas. </div> <br>
 
+
 <h2>Listan:</h2>
-<test-grid [grid-columns] = "[{'colName': 'Person_ID'},
- {'colName': 'Namn'}, {'colName': 'Avgift'}]"
+<test-grid [grid-columns] = "[{'colName': 'CustomerCode'},
+ {'colName': 'CustomerName'}, {'colName': 'CustomerAmount'}]"
   [grid-data] = "CustomerModels"
   (grid-selected)="SelectCustomer($event)"
 ></test-grid>

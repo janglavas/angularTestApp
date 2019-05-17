@@ -1,0 +1,124 @@
+{
+  "Customers": [
+    {
+      "id": 1,
+      "CustomerCode": "1001",
+      "CustomerName": "Jan",
+      "CustomerAmount": "99.99"
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 2
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 3
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 4
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 5
+    },
+    {
+      "CustomerCode": "9999",
+      "CustomerName": "jan",
+      "CustomerAmount": "222",
+      "id": 6
+    },
+    {
+      "CustomerCode": "9999",
+      "CustomerName": "Jan",
+      "CustomerAmount": "9000",
+      "id": 7
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "jan",
+      "CustomerAmount": "022",
+      "id": 8
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "jan",
+      "CustomerAmount": "0222",
+      "id": 9
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 10
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "jan",
+      "CustomerAmount": 0,
+      "id": 11
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "weqwe",
+      "CustomerAmount": 0,
+      "id": 12
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "jansd",
+      "CustomerAmount": "9000",
+      "id": 13
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "sdss",
+      "CustomerAmount": "222",
+      "id": 14
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "sdss",
+      "CustomerAmount": "222",
+      "id": 15
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 16
+    },
+    {
+      "CustomerCode": "2222",
+      "CustomerName": "wewew",
+      "CustomerAmount": 0,
+      "id": 17
+    },
+    {
+      "CustomerCode": "1001",
+      "CustomerName": "Jan",
+      "CustomerAmount": "99.99",
+      "id": 18
+    },
+    {
+      "CustomerCode": "9999",
+      "CustomerName": "Jan",
+      "CustomerAmount": "9000",
+      "id": 19
+    },
+    {
+      "CustomerCode": "1111",
+      "CustomerName": "jan",
+      "CustomerAmount": "41141",
+      "id": 20
+    }
+  ]
+}
